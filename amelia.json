@@ -1,0 +1,61 @@
+{
+  "name": "Midori Browser",
+  "vendor": "Astian",
+  "appId": "midori",
+  "binaryName": "midori",
+  "version": {
+    "product": "firefox",
+    "version": "159.0.1",
+    "candidate": "158.0"
+  },
+  "buildOptions": {
+    "generateBranding": true
+  },
+  "addons": {
+    "midori-newtab": {
+      "id": "midori-newtab",
+      "repo": "goastian/midori-tab",
+      "version": "v1.0.54",
+      "platform": "github",
+      "fileGlob": "midori-tab-1.0.54-firefox.zip"
+    }
+  },
+  "brands": {
+    "release": {
+      "backgroundColor": "#282A33",
+      "brandShorterName": "Midori",
+      "brandShortName": "Midori",
+      "brandFullName": "Midori Browser",
+      "release": {
+        "displayVersion": "11.9.2",
+        "archives": {
+          "windows": "windows.mar",
+          "macos-aarch64": "macos-aarch64.mar",
+          "linux": "linux.mar",
+          "macos-x64": "macos-x64.mar",
+          "windows-arm64": "windows-arm64.mar",
+          "linux-aarch64": "linux-aarch64.mar"
+        }
+      }
+    },
+    "dawn": {
+      "backgroundColor": "#282A33",
+      "brandShorterName": "Midori",
+      "brandShortName": "Dawn",
+      "brandFullName": "Midori Dawn",
+      "release": {
+        "displayVersion": "12.0",
+        "github": {
+          "repo": "goastian/midori-desktop"
+        }
+      }
+    }
+  },
+  "license": {
+    "ignoredFiles": [
+      ".*\\.json"
+    ],
+    "licenseType": "MPL-2.0"
+  },
+  "updateHostname": "update.astian.org"
+}
